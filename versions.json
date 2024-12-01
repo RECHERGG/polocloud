@@ -477,7 +477,7 @@
           "replacements": [
             {
               "indicator": "  bungeecord",
-              "value": "%bungeecord_use%"
+              "value": "true"
             }
           ],
           "appends": []
