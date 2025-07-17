@@ -31,7 +31,7 @@ class Agent {
 
     init {
         // display the default log information
-        logger.info("Starting PoloCloud Agent...")
+        i18n.info("agent.starting")
 
         this.runtime = Runtime.create()
         this.grpcServerEndpoint.connect()
