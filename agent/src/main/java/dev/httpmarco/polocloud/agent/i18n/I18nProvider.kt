@@ -1,5 +1,6 @@
 package dev.httpmarco.polocloud.agent.i18n
 
+import dev.httpmarco.polocloud.agent.logger
 import java.util.*
 
 open class I18nProvider(private val resourceBundlePrefix: String) : I18n {
@@ -7,7 +8,11 @@ open class I18nProvider(private val resourceBundlePrefix: String) : I18n {
     private val utf8ResourceBundleControl = UTF8ResourceBundleControl()
     private val locale = Locale.ENGLISH // default/backup locale is English
 
-    override fun get(key: String): String? {
+    fun info(key: String) {
+        logger.info(get(key))
+    }
+
+    override fun get(key: String): String {
         return get(key, mutableListOf<Any?>())
     }
 

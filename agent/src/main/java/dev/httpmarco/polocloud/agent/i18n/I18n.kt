@@ -9,7 +9,7 @@ interface I18n {
      * @param key the key of translation
      * @return the translation for the key
      */
-    fun get(key: String): String?
+    fun get(key: String): String
 
     /**
      * The default language is used here.
