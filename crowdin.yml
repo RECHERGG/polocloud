@@ -1,2 +1,5 @@
 bundles:
   - 2
+files:
+  - source: /agent/src/main/resources/i18n/polocloud-agent.properties
+    translation: /agent/src/main/resources/i18n/polocloud-agent_%two_letters_code%.properties
