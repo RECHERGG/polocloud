@@ -36,7 +36,7 @@ class Agent {
         this.runtime = Runtime.create()
         this.grpcServerEndpoint.connect()
 
-        logger.info("Using runtime: ${runtime::class.simpleName}")
+        i18n.info("agent.starting.runtime", runtime::class.simpleName)
 
         val groups = runtime.groupStorage().items()
         logger.info("Load groups&8 (&7${groups.size}&8): &7" + groups.joinToString(separator = "&8, &7") { it.data.name })
